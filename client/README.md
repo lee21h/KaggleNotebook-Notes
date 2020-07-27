@@ -13,4 +13,8 @@ $ npm run dev
 $ npm run build
 $ npm run start
 
-# genera
+# generate static project
+$ npm run generate
+```
+
+For detailed explanation on how thi
