@@ -25,4 +25,6 @@ You can create the following extra directories, some of which have special behav
 
 ### `assets`
 
-The assets directory contains
+The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
+
+More i
