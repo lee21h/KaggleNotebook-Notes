@@ -37,4 +37,4 @@ More information about the usage of this directory in [the documentation](https:
 
 ### `layouts`
 
-Layouts
+Layouts are a great help when you want to change the look and feel of your Nuxt app, whet
