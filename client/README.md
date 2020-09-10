@@ -47,4 +47,6 @@ This directory contains your application views and routes. Nuxt will read all th
 
 More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
 
-##
+### `plugins`
+
+The plugins directory contains JavaScript plugins that you want to
