@@ -55,4 +55,4 @@ More information about the usage of this directory in [the documentation](https:
 
 ### `static`
 
-This directory contain
+This directory contains your static files. Each file inside this directory is mapped to `
