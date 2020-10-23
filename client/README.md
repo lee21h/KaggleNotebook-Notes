@@ -63,4 +63,4 @@ More information about the usage of this directory in [the documentation](https:
 
 ### `store`
 
-This directory contain
+This directory contains your Vuex store files. Creating a file in this directory automa
