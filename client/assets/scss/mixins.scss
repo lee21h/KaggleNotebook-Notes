@@ -12,4 +12,6 @@ $text-xxl-size: 20px;
   }
 }
 
-@mi
+@mixin mobile-landscape {
+  @media (max-width: #{$mobile-landscape-width}) {
+  
