@@ -14,4 +14,9 @@ $text-xxl-size: 20px;
 
 @mixin mobile-landscape {
   @media (max-width: #{$mobile-landscape-width}) {
-  
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: #{$tablet-width}
