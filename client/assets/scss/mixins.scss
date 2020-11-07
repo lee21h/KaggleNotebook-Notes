@@ -25,4 +25,11 @@ $text-xxl-size: 20px;
 }
 
 @mixin desktop {
-  @media (min-width: #{$desktop-wi
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin container {
+  margin-left: auto;
+  margi
