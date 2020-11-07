@@ -19,4 +19,10 @@ $text-xxl-size: 20px;
 }
 
 @mixin tablet {
-  @media (max-width: #{$tablet-width}
+  @media (max-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-wi
