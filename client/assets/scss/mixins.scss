@@ -32,4 +32,7 @@ $text-xxl-size: 20px;
 
 @mixin container {
   margin-left: auto;
-  margi
+  margin-right: auto;
+  width: 100%;
+  box-sizing: border-box;
+  @include d
