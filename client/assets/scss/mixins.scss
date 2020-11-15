@@ -35,4 +35,8 @@ $text-xxl-size: 20px;
   margin-right: auto;
   width: 100%;
   box-sizing: border-box;
-  @include d
+  @include desktop {
+    max-width: 1170px;
+  }
+
+  @include tablet 
