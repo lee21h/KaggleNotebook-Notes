@@ -45,4 +45,10 @@ $text-xxl-size: 20px;
 
   @include mobile-landscape {
     max-width: 750px;
- 
+    padding: 0 15px;
+  }
+
+  @include mobile {
+    max-width: 100%;
+    padding: 0 15px;
+  }
