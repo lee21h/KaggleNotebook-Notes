@@ -52,3 +52,9 @@ $text-xxl-size: 20px;
     max-width: 100%;
     padding: 0 15px;
   }
+}
+
+@mixin desktop-container {
+  max-width: 1440px;
+  margin-left: auto;
+  ma
