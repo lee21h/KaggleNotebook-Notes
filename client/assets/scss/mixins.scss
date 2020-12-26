@@ -69,4 +69,8 @@ $text-xxl-size: 20px;
   min-width: 115px;
   color: $white;
   .icon {
-    margin-right: 5p
+    margin-right: 5px;
+  }
+  &.green {
+    border: 1px solid #038e92;
+    background: linear-gra
