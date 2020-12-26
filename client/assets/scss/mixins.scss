@@ -57,4 +57,9 @@ $text-xxl-size: 20px;
 @mixin desktop-container {
   max-width: 1440px;
   margin-left: auto;
-  ma
+  margin-right: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@mixin default-bu
