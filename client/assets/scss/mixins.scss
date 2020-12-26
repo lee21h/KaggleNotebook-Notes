@@ -62,4 +62,8 @@ $text-xxl-size: 20px;
   box-sizing: border-box;
 }
 
-@mixin default-bu
+@mixin default-button {
+  height: 41px;
+  font-size: 16px;
+  border-radius: 5px;
+  min-wi
