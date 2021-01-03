@@ -86,4 +86,10 @@ $text-xxl-size: 20px;
       background: linear-gradient(to bottom, #fff 0%, #ebebeb 100%);
     }
   }
-  &.small
+  &.small {
+    height: 32px;
+    font-size: 12px;
+  }
+  &.big {
+    height: 52px;
+  
