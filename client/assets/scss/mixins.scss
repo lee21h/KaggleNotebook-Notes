@@ -92,4 +92,9 @@ $text-xxl-size: 20px;
   }
   &.big {
     height: 52px;
-  
+    font-size: 15px;
+  }
+}
+
+@mixin default-input {
+  border: 1px solid #e8ef
