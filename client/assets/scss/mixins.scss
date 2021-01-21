@@ -101,4 +101,7 @@ $text-xxl-size: 20px;
   width: 100%;
   padding: 7px 15px;
   height: 41px;
-  border-ra
+  border-radius: 0;
+  box-shadow: none;
+  &:disabled {
+    background-color: $disabled
