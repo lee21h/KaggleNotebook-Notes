@@ -104,4 +104,10 @@ $text-xxl-size: 20px;
   border-radius: 0;
   box-shadow: none;
   &:disabled {
-    background-color: $disabled
+    background-color: $disabled-input;
+  }
+}
+
+@mixin form-field {
+  display: flex;
+  align-items: center;
