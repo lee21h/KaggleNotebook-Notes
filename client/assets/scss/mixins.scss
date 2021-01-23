@@ -123,4 +123,10 @@ $text-xxl-size: 20px;
       font-weight: 400;
       text-transform: uppercase;
     }
- 
+  }
+  .control {
+    width: 60%;
+    /deep/ input {
+      @include default-input;
+    }
+   
