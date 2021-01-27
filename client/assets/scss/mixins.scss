@@ -129,4 +129,8 @@ $text-xxl-size: 20px;
     /deep/ input {
       @include default-input;
     }
-   
+    /deep/ .select {
+      width: 100%;
+      height: auto;
+      select {
+      
