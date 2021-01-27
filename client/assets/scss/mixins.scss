@@ -138,4 +138,10 @@ $text-xxl-size: 20px;
     }
   }
   @include mobile {
-    /deep/
+    /deep/ .label {
+      min-width: 100%;
+    }
+    .control {
+      width: 100%;
+    }
+  }
