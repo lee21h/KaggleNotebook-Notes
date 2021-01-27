@@ -145,3 +145,9 @@ $text-xxl-size: 20px;
       width: 100%;
     }
   }
+}
+
+@mixin heading {
+  .heading {
+    padding: 10px 30px;
+    border-bottom
