@@ -150,4 +150,7 @@ $text-xxl-size: 20px;
 @mixin heading {
   .heading {
     padding: 10px 30px;
-    border-bottom
+    border-bottom: 1px solid $border-color;
+    display: flex;
+    color: $link-color;
+    align-
