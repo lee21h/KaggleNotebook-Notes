@@ -160,4 +160,11 @@ $text-xxl-size: 20px;
     margin: 0;
     h4 {
       font-weight: 400;
-      margin: 0 0 0 
+      margin: 0 0 0 10px;
+    }
+  }
+}
+
+@mixin border-container {
+  background: #fff;
+  border: 1px solid #e
