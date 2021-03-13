@@ -12,4 +12,7 @@ $minerva-gray: #f2f2f2;
 $twitter: #4099ff;
 $twitter-invert: findColorInvert($twitter);
 
-// Setup $colors to use as bulma clas
+// Setup $colors to use as bulma classes (e.g. 'is-twitter')
+$colors: (
+  "white": ($white, $black),
+  "black
