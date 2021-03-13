@@ -10,4 +10,6 @@ $primary-invert: findColorInvert($primary);
 $warning: #ffac3f;
 $minerva-gray: #f2f2f2;
 $twitter: #4099ff;
-$twitter-in
+$twitter-invert: findColorInvert($twitter);
+
+// Setup $colors to use as bulma clas
