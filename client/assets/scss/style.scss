@@ -1,0 +1,43 @@
+
+@import './overrides';
+@import './mixins';
+
+
+html {
+  background: #F8F8F8;
+}
+
+.field.is-grouped {
+  justify-content: center;
+}
+
+$panel-heading-color: #073b4c;
+$positive-sell-color: #9fdf4b;
+$negative-sell-color: #eb8258;
+$buy-order-color: #118ab2;
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity .2s;
+}
+.page-enter,
+.page-leave-active {
+  opacity: 0;
+}
+
+.all-portfolios {
+  .echarts {
+    min-height: 50rem !important;
+    min-width: 100%;
+    margin: 0rem 0rem 0rem -4rem;
+
+    @include mobile {
+      min-width: 0;
+      margin: 0rem 0rem 0rem -2rem;
+    }
+  }
+}
+
+.single-portfolio {
+  .echarts {
+    // min-height: 20rem !important;
