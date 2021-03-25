@@ -5,4 +5,6 @@
         <p class="card-header-title has-text-grey">
           {{ title }}
         </p>
-   
+      </header>
+      <div class="card-content">
+        <div class="c
