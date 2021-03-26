@@ -15,4 +15,9 @@
         <div class="card-footer-item">
           <span>
             <slot />
-  
+          </span>
+        </div>
+      </footer>
+    </div>
+  </div>
+</template
