@@ -27,3 +27,8 @@ export default {
   name: 'BuefyCard',
   props: {
     title: {
+      type: String,
+      required: true,
+    },
+    icon: {
+      type: Stri
