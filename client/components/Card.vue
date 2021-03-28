@@ -31,4 +31,9 @@ export default {
       required: true,
     },
     icon: {
-      type: Stri
+      type: String,
+      required: true,
+    },
+  },
+}
+</script>
