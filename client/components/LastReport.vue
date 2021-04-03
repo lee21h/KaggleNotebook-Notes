@@ -15,3 +15,9 @@ export default {
       required: true,
     },
     date: {
+      type: Date,
+      required: true,
+    },
+  },
+  methods: {
+    printDate(date
