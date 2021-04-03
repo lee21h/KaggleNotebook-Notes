@@ -4,4 +4,9 @@
     .card-content
       .content.has-text-centered
         h2 🚨 Last reported price: ${{price}} at {{printDate(date)}} 🚨
-</templa
+</template>
+
+<script>
+export default {
+  name: 'LastReport',
+  props: {
