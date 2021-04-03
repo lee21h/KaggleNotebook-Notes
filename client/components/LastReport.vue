@@ -10,3 +10,8 @@
 export default {
   name: 'LastReport',
   props: {
+    price: {
+      type: Number,
+      required: true,
+    },
+    date: {
