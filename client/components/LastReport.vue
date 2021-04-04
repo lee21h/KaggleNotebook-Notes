@@ -20,4 +20,6 @@ export default {
     },
   },
   methods: {
-    printDate(date
+    printDate(dateInput) {
+      const dateStr =
+        this.padStr(date
