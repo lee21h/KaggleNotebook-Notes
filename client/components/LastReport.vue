@@ -27,3 +27,8 @@ export default {
         this.padStr(1 + dateInput.getMonth()) +
         '-' +
         this.padStr(dateInput.getDate())
+      return dateStr
+    },
+    padStr(i) {
+      return i < 10 ? '0' + i : '' + i
+    },
