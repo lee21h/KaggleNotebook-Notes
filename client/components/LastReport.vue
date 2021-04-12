@@ -22,4 +22,6 @@ export default {
   methods: {
     printDate(dateInput) {
       const dateStr =
-        this.padStr(date
+        this.padStr(dateInput.getFullYear()) +
+        '-' +
+        this.padStr(1 + dateInput.g
