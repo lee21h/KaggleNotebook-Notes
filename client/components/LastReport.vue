@@ -32,3 +32,11 @@ export default {
     padStr(i) {
       return i < 10 ? '0' + i : '' + i
     },
+  },
+}
+</script>
+<style lang="scss" scoped>
+.column {
+  padding: 0.75rem 0;
+}
+</
