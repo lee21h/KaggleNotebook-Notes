@@ -39,4 +39,4 @@ export default {
 .column {
   padding: 0.75rem 0;
 }
-</
+</style>
