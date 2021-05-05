@@ -105,3 +105,75 @@ export default {
           },
           subtextStyle: {
             fontSize: 18,
+          },
+        },
+        tooltip: {
+          trigger: 'item',
+          axisPointer: {
+            type: 'cross',
+          },
+          formatter: function (params) {
+            return `${dollarUSLocale.format(params.data[2])} coins @ $${
+              params.data[1]
+            }<br>
+                    Total value: $${dollarUSLocale.format(params.data[3])}`
+          },
+        },
+        grid: {
+          left: '8%',
+          top: '10%',
+        },
+        xAxis: {
+          type: 'category',
+          splitLine: {
+            lineStyle: {
+              type: 'dashed',
+            },
+          },
+          axisLabel: {
+            formatter: function (value) {
+              return format(new Date(value), 'yyyy-MM-dd HH:mm:ss')
+            },
+          },
+        },
+        yAxis: {
+          type: 'value',
+          splitLine: {
+            lineStyle: {
+              type: 'dashed',
+            },
+          },
+          scale: true,
+        },
+        dataset: {
+          source: tradesData,
+          dimensions: ['timestamp', 'price', 'size', 'totalValue'],
+        },
+        series: [
+          {
+            name: 'price',
+            type: 'line',
+            lineStyle: {
+              color: 'rgb(4, 31, 199)',
+            },
+            encode: {
+              x: 'timestamp',
+              y: 'price',
+            },
+            symbolSize: 0,
+          },
+          {
+            name: 'tradeValue',
+            type: 'scatter',
+            encode: {
+              x: 'timestamp',
+              y: 'price',
+            },
+            symbolSize: function (data) {
+              return Math.sqrt(data[3])
+            },
+            itemStyle: {
+              shadowBlur: 10,
+              shadowColor: 'rgba(120, 36, 50, 0.5)',
+              shadowOffsetY: 5,
+              color: new graphic.RadialGradient(0.4, 0.3, 1, [
