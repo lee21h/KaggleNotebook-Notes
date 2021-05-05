@@ -177,3 +177,52 @@ export default {
               shadowColor: 'rgba(120, 36, 50, 0.5)',
               shadowOffsetY: 5,
               color: new graphic.RadialGradient(0.4, 0.3, 1, [
+                {
+                  offset: 0,
+                  color: 'rgb(251, 118, 123)',
+                },
+                {
+                  offset: 1,
+                  color: 'rgb(204, 46, 72)',
+                },
+              ]),
+            },
+          },
+        ],
+      },
+    }
+  },
+}
+</script>
+<style lang="scss" scoped>
+.section {
+  padding: 0;
+}
+
+.card-content {
+  padding: 0;
+}
+
+.column {
+  padding: 0.75rem 0;
+}
+
+.chart {
+  height: 100vh;
+}
+// @import '@/assets/scss/style.scss';
+.panel {
+  border-radius: 5px;
+}
+.panel-heading {
+  // background-color: $panel-heading-color;
+  color: white;
+  border-radius: 10px 10px 0px 0px;
+}
+.panel-block:last-of-type {
+  border-radius: 0px 0px 10px 10px;
+  // border-bottom: none;
+  border-left: none !important;
+  border-right: none !important;
+}
+</style>
