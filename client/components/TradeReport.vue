@@ -34,3 +34,56 @@ export default {
       price: null,
       selectedDatetime: null,
       showWeekNumber: false,
+      enableSeconds: false,
+      hourFormat: undefined, // Browser locale
+      locale: undefined, // Browser locale
+      firstDayOfWeek: undefined, // 0 - Sunday
+    }
+  },
+  methods: {
+    clearDateTime() {
+      this.selectedDatetime = null
+    },
+    async submitTrade() {
+      if (this.amount && this.price && this.selectedDatetime) {
+        const trade = {
+          quantity: this.amount,
+          price: this.price,
+          datetime: this.selectedDatetime,
+        }
+        const res = await this.$axios.$post('/new', trade)
+        if (res === 'ok') {
+          this.$buefy.toast.open({
+            message: 'Trade submitted successfully! Thank you!',
+            type: 'is-success',
+            duration: 5000,
+          })
+        } else {
+          this.$buefy.toast.open({
+            message: 'Trade submission failed!',
+            type: 'is-danger',
+            duration: 5000,
+          })
+        }
+      }
+    },
+  },
+}
+</script>
+<style lang="scss" scoped>
+.section {
+  padding: 0;
+}
+
+.card-content {
+  padding: 0;
+}
+
+.container {
+  padding: 3rem;
+}
+
+.column {
+  padding: 0.75rem 0;
+}
+</style>
