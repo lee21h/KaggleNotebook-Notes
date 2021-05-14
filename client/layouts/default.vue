@@ -1,3 +1,7 @@
 <template lang="pug">
 div
-  n
+  nuxt
+  footer.footer
+    .content.has-text-centered
+      p
+        stro
