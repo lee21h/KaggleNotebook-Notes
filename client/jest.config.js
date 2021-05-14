@@ -13,4 +13,7 @@ module.exports = {
   collectCoverage: true,
   collectCoverageFrom: [
     '<rootDir>/components/**/*.vue',
-    '<rootDir>/pag
+    '<rootDir>/pages/**/*.vue',
+  ],
+  testEnvironment: 'jsdom',
+}
