@@ -4,4 +4,6 @@ div
   footer.footer
     .content.has-text-centered
       p
-        stro
+        strong OLOTC
+        |  | View code on
+        a(href='https://github.com/s-jannson/OLOTC', 
