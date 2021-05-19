@@ -22,4 +22,6 @@ export default {
           to: { name: 'index' },
         },
         {
-       
+          title: 'Inspire',
+          icon: 'lightbulb',
+          to: { name: 'in
