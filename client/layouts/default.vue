@@ -8,3 +8,9 @@ div
         |  | View code on
         a(href='https://github.com/s-jannson/OLOTC', target="_blank")  Github
         |  (and do feel free to improve and open PRs)
+</template>
+
+<script>
+export default {
+  name: 'DefaultLayout',
+  dat
