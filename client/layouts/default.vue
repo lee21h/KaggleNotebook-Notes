@@ -13,4 +13,9 @@ div
 <script>
 export default {
   name: 'DefaultLayout',
-  dat
+  data() {
+    return {
+      items: [
+        {
+          title: 'Home',
+    
