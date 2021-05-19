@@ -18,4 +18,8 @@ export default {
       items: [
         {
           title: 'Home',
-    
+          icon: 'home',
+          to: { name: 'index' },
+        },
+        {
+       
