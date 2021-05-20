@@ -24,4 +24,10 @@ export default {
         {
           title: 'Inspire',
           icon: 'lightbulb',
-          to: { name: 'in
+          to: { name: 'inspire' },
+        },
+      ],
+    }
+  },
+}
+</script>
