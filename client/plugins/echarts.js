@@ -3,4 +3,7 @@ import * as echarts from 'echarts'
 
 // import ECharts modules manually to reduce bundle size
 // import 'echarts/lib/chart/bar'
-// import 'echart
+// import 'echarts/lib/component/tooltip'
+
+// register component to use
+Vue.component('Chart
