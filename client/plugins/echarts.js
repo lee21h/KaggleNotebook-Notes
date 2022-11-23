@@ -6,4 +6,4 @@ import * as echarts from 'echarts'
 // import 'echarts/lib/component/tooltip'
 
 // register component to use
-Vue.component('Chart
+Vue.component('Chart', echarts);
