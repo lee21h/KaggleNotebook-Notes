@@ -4,4 +4,5 @@ module.exports = {
       name: 'olotc-client',
       cwd: `./client`,
       // exec_mode: 'cluster',
-      // instances: 'max', // O
+      // instances: 'max', // Or a number of instances
+      script: './node_modules/nuxt
