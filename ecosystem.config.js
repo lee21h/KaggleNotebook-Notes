@@ -2,4 +2,6 @@ module.exports = {
   apps: [
     {
       name: 'olotc-client',
-      cwd: `./cli
+      cwd: `./client`,
+      // exec_mode: 'cluster',
+      // instances: 'max', // O
