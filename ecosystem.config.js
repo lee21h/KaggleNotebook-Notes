@@ -13,4 +13,4 @@ module.exports = {
     {
       name: "olotc-server",
       cwd: `./server`,
-      script: "../../venv/bin/gunicor
+      script: "../../venv/bin/gunicorn --workers=2 -b 0.0.0.0:5000 --worker-class=meinheld.gmeinhel
