@@ -11,4 +11,6 @@ module.exports = {
       restart: true,
     },
     {
-  
+      name: "olotc-server",
+      cwd: `./server`,
+      script: "../../venv/bin/gunicor
