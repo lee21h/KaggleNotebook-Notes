@@ -19,4 +19,9 @@ module.exports = {
       max_memory_restart: "256M",
       output: "./logs/olotc-out.log",
       error: "./logs/olotc-error.log",
-  
+      kill_timeout: 5000,
+      restartDelay: 5000,
+      restart: true,
+    }
+  ]
+}
