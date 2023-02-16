@@ -6,4 +6,5 @@ from flask_cors import CORS, cross_origin
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///olotc.sql
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///olotc.sqlite3'
+app.config['SECRET_KEY'] = "random-secret-strong-stri
