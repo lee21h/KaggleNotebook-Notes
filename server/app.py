@@ -7,4 +7,8 @@ from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///olotc.sqlite3'
-app.config['SECRET_KEY'] = "random-secret-strong-stri
+app.config['SECRET_KEY'] = "random-secret-strong-string"
+cors = CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
+
+db = SQLAlche
