@@ -17,4 +17,5 @@ with app.app_context():
 
 class trade(db.Model):
     id = db.Column('entry_id', db.Integer, primary_key = True)
-    dat
+    datetime = db.Column(db.DateTime, nullable=False)
+    price_usd = db.Column(db.Float, nullable=F
