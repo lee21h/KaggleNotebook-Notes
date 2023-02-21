@@ -11,4 +11,9 @@ app.config['SECRET_KEY'] = "random-secret-strong-string"
 cors = CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 
-db = SQLAlche
+db = SQLAlchemy(app)
+with app.app_context():
+    db.create_all()
+
+class trade(db.Model):
+   
