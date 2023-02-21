@@ -16,4 +16,5 @@ with app.app_context():
     db.create_all()
 
 class trade(db.Model):
-   
+    id = db.Column('entry_id', db.Integer, primary_key = True)
+    dat
