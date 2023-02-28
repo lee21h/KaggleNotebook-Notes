@@ -20,4 +20,5 @@ class trade(db.Model):
     datetime = db.Column(db.DateTime, nullable=False)
     price_usd = db.Column(db.Float, nullable=False)
     quantity = db.Column(db.Float, nullable=False)
-    total_value = db.C
+    total_value = db.Column(db.Float, nullable=False)
+    created_on = db.Column
