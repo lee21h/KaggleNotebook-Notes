@@ -26,4 +26,6 @@ class trade(db.Model):
 
     def __init__(self, datetime, price_usd, quantity, total_value):
         self.datetime = datetime
-        self.price_usd = float(price_usd
+        self.price_usd = float(price_usd)
+        self.quantity = float(quantity)
+        self.total_value = total_value
