@@ -29,3 +29,8 @@ class trade(db.Model):
         self.price_usd = float(price_usd)
         self.quantity = float(quantity)
         self.total_value = total_value
+
+
+@app.route('/', methods=['GET'])
+@cross_origin()
+def get_all_t
