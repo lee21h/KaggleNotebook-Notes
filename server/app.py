@@ -23,3 +23,6 @@ class trade(db.Model):
     total_value = db.Column(db.Float, nullable=False)
     created_on = db.Column(db.DateTime, server_default=db.func.now())
     updated_on = db.Column(db.DateTime, server_default=db.func.now(), server_onupdate=db.func.now())
+
+    def __init__(self, datetime, price_usd, quantity, total_value):
+ 
