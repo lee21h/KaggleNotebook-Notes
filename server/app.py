@@ -25,4 +25,5 @@ class trade(db.Model):
     updated_on = db.Column(db.DateTime, server_default=db.func.now(), server_onupdate=db.func.now())
 
     def __init__(self, datetime, price_usd, quantity, total_value):
- 
+        self.datetime = datetime
+        self.price_usd = float(price_usd
