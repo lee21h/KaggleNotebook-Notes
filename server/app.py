@@ -33,4 +33,6 @@ class trade(db.Model):
 
 @app.route('/', methods=['GET'])
 @cross_origin()
-def get_all_t
+def get_all_trades():
+    trades = trade.query.order_by(trade.datetime).all()
+  
