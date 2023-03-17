@@ -37,4 +37,6 @@ def get_all_trades():
     trades = trade.query.order_by(trade.datetime).all()
     output = []
     for t in trades:
-        trade_data = {'datetime': t.datetime.strftime('%Y-%m-%dT%H:%M:%S.%fZ'), 'price_usd': t.price_usd, 'quantity': t.quanti
+        trade_data = {'datetime': t.datetime.strftime('%Y-%m-%dT%H:%M:%S.%fZ'), 'price_usd': t.price_usd, 'quantity': t.quantity, 'total_value': t.total_value}
+        output.append(trade_data)
+    ret
