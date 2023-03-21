@@ -45,4 +45,5 @@ def get_all_trades():
 @cross_origin()
 def new_otc_trade():
     data = request.get_json()
-    if not dat
+    if not data['datetime'] or not data['price'] or not data['quantity']:
+        return 
