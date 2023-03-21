@@ -42,4 +42,7 @@ def get_all_trades():
     return jsonify(output)
 
 @app.route('/new', methods = ['POST'])
-@
+@cross_origin()
+def new_otc_trade():
+    data = request.get_json()
+    if not dat
