@@ -46,4 +46,8 @@ def get_all_trades():
 def new_otc_trade():
     data = request.get_json()
     if not data['datetime'] or not data['price'] or not data['quantity']:
-        return 
+        return Response(
+            "Missing body parameters",
+            status=400,
+        )
+ 
