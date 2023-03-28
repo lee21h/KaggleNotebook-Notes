@@ -50,4 +50,6 @@ def new_otc_trade():
             "Missing body parameters",
             status=400,
         )
- 
+    else:
+        if not data_validated(data):
+            return Response
