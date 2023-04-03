@@ -52,4 +52,6 @@ def new_otc_trade():
         )
     else:
         if not data_validated(data):
-            return Response
+            return Response(
+                "Invalid body parameters",
+                status=40
