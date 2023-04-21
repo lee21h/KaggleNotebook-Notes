@@ -54,4 +54,6 @@ def new_otc_trade():
         if not data_validated(data):
             return Response(
                 "Invalid body parameters",
-                status=40
+                status=400,
+            )
+        _datetime = datetime.strptime(data['datetime'], '%Y-%m-%d
