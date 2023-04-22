@@ -56,4 +56,5 @@ def new_otc_trade():
                 "Invalid body parameters",
                 status=400,
             )
-        _datetime = datetime.strptime(data['datetime'], '%Y-%m-%d
+        _datetime = datetime.strptime(data['datetime'], '%Y-%m-%dT%H:%M:%S.%fZ')
+        total_value = float(data['price']) * float(data['quantit
