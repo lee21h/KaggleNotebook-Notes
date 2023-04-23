@@ -57,4 +57,5 @@ def new_otc_trade():
                 status=400,
             )
         _datetime = datetime.strptime(data['datetime'], '%Y-%m-%dT%H:%M:%S.%fZ')
-        total_value = float(data['price']) * float(data['quantit
+        total_value = float(data['price']) * float(data['quantity'])
+        new_trade = trade(datetime=_datetime, price_usd=data['price'], quantit
