@@ -60,3 +60,5 @@ def new_otc_trade():
         total_value = float(data['price']) * float(data['quantity'])
         new_trade = trade(datetime=_datetime, price_usd=data['price'], quantity=data['quantity'], total_value=total_value)
         db.session.add(new_trade)
+        db.session.commit()
+        print('New trade was added succes
