@@ -64,4 +64,6 @@ def new_otc_trade():
         print('New trade was added successfully')
         return Response('ok', status=201)
 
-def data_val
+def data_validated(data):
+    try:
+        d = datetime.strptime(data['datetime'], '%Y-%
