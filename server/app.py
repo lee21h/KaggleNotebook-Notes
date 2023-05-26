@@ -66,4 +66,6 @@ def new_otc_trade():
 
 def data_validated(data):
     try:
-        d = datetime.strptime(data['datetime'], '%Y-%
+        d = datetime.strptime(data['datetime'], '%Y-%m-%dT%H:%M:%S.%fZ')
+        p = float(data['price'])
+        q = float(dat
