@@ -71,4 +71,8 @@ def data_validated(data):
         q = float(data['quantity'])
     except ValueError:
         return False
-    if p <=
+    if p <= 0 or q <= 0:
+        return False
+    if d > datetime.now():
+        return False
+    r
