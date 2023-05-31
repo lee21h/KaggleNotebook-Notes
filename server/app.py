@@ -75,4 +75,9 @@ def data_validated(data):
         return False
     if d > datetime.now():
         return False
-    r
+    return True
+
+
+if __name__ == '__main__':
+   with app.app_context():
+    db.create_all()
