@@ -1,0 +1,7 @@
+click
+Flask
+Flask-Cors
+Flask-SQLAlchemy
+greenlet
+gunicorn
+importlib-metadat
