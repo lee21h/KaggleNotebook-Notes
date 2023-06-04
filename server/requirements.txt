@@ -4,4 +4,12 @@ Flask-Cors
 Flask-SQLAlchemy
 greenlet
 gunicorn
-importlib-metadat
+importlib-metadata
+itsdangerous
+Jinja2
+MarkupSafe
+meinheld
+six
+SQLAlchemy
+Werkzeug
+zipp
